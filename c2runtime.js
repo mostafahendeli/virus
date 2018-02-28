@@ -18951,10 +18951,10 @@ cr.behaviors.solid = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
+	cr.plugins_.Mouse,
 	cr.plugins_.Sprite,
 	cr.plugins_.Text,
 	cr.plugins_.Touch,
-	cr.plugins_.Mouse,
 	cr.behaviors.Bullet,
 	cr.behaviors.Fade,
 	cr.behaviors.solid,
@@ -18965,6 +18965,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Text.prototype.acts.SetText,
 	cr.system_object.prototype.cnds.Every,
 	cr.system_object.prototype.exps.random,
+	cr.plugins_.Sprite.prototype.cnds.CompareInstanceVar,
 	cr.system_object.prototype.acts.CreateObject,
 	cr.plugins_.Sprite.prototype.exps.X,
 	cr.plugins_.Sprite.prototype.exps.Y,
@@ -18976,5 +18977,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
 	cr.behaviors.Fade.prototype.acts.StartFade,
 	cr.plugins_.Sprite.prototype.cnds.OnDestroyed,
-	cr.system_object.prototype.acts.AddVar
+	cr.system_object.prototype.acts.AddVar,
+	cr.system_object.prototype.acts.SubVar,
+	cr.plugins_.Sprite.prototype.acts.SubInstanceVar
 ];};

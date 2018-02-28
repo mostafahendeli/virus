@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1519758627,
+	"version": 1519857154,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -13,6 +13,9 @@
 		"images/sprite4-sheet0.png",
 		"images/spikey-sheet0.png",
 		"images/spikey-sheet1.png",
+		"images/neonsigntexteffect-sheet0.png",
+		"images/variables-sheet0.png",
+		"images/sprite5-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
